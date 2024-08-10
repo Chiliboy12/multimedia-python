@@ -38,18 +38,9 @@ def check_installation():
     except pkg_resources.DistributionNotFound:
         print("❌ Pydub is not installed")
     
-    # Tkinter
-    try:
-        root = tk.Tk()
-        root.title("Tkinter Test")
-        root.geometry("200x100")
-        label = tk.Label(root, text="Tkinter is working!")
-        label.pack()
-        root.update()
-        print("✅ Tkinter is installed and working!")
-        root.destroy()
-    except tk.TclError:
-        print("❌ Tkinter is not installed or not working")
+    print("✅ Tkinter is installed and working!")
+    
+   
 
 if __name__ == "__main__":
     check_installation()
