@@ -34,7 +34,7 @@ root.title("Multimedia Application")
 from PIL import Image, ImageTk
 
 # Memuat gambar menggunakan Pillow
-image = Image.open('Inosuke.jpeg')
+image = Image.open('Inosuke.jpg')
 photo = ImageTk.PhotoImage(image)
 
 # Membuat label untuk menampilkan gambar
